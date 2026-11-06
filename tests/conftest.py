@@ -10,6 +10,13 @@ def product():
 
 
 @pytest.fixture
+def product_dict():
+    return Product.new_product(
+        {"name": "Iphone 15", "description": "512GB, Gray space", "price": 210000.0, "quantity": 8}
+    )
+
+
+@pytest.fixture
 def category1():
     return Category(
         "Смартфоны",
