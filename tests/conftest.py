@@ -8,10 +8,12 @@ from src.product import Product
 def product():
     return Product("Samsung Galaxy S23 Ultra", "256GB, Серый цвет, 200MP камера", 180000.0, 5)
 
+
 @pytest.fixture
 def product_dict():
-    return Product.new_product({"name": "Iphone 15", "description": "512GB, Gray space", "price": 210000.0,
-         "quantity": 8})
+    return Product.new_product(
+        {"name": "Iphone 15", "description": "512GB, Gray space", "price": 210000.0, "quantity": 8}
+    )
 
 
 @pytest.fixture

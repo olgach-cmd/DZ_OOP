@@ -26,6 +26,3 @@ class Category:
         for product in self.__products:
             list_products += f"{product.name}, {product.price} руб. Остаток: {product.quantity} шт.\n"
         return list_products
-
-
-
